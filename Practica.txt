@@ -1,0 +1,38 @@
+Se pide desarrollar una solución que Implemente el diagrama de clases adjunto, Implementar tanto 
+el .h como el .cpp de las clases, 
+realizar la Herencia, 
+notar que taller tiene un atributo vehiculo que es un arreglo de Vehiculos,
+Implenetar  La función meter (coche o moto) implica introducir el coche en el taller
+y la función arreglarCoches o arreglarMotos implica recorrer todos los coches y motos que haya y arrancarlos.
+-------------------------------------------------------------------------------------------------------
+Taller (padre)
+Atributos:
+-int max_vehiculos;
+-int num_vehiculos;
+Metodos:
+Taller(int);
+Void meter(vehiculo);
+Void arreglarVehiculos();
+-------------------------
+	| 1
+	^ 1..*
+-------------------------
+Vehiculo (hijo)
+Atributo:
+string color;
+string marca;
+Metodo:
+void arrancar() = 0;
+void parar() = 0;
+void repostar() = 0;
+--------------------------
+	  |
+	  ^
+--------------------------
+|			 |
+^			 ^
+Coche			Moto
+Atributo:		Atributo:
+int motor;		int cilindrada;
+Metodo:			Metodo:
+Coche();		Moto();
