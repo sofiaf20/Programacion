@@ -1,21 +1,17 @@
 #include <iostream>
 #include <string.h>
-#include "Vehiculo.h"
-#include "Taller.h"
+#include "header1.h"
 
 using namespace std;
 
 int main()
 {
-    int maximo;
     int opcion;
-
-    cout<<"Taller:"<<endl;
+    int maximo;
     cout<<"Indicar la capacidad maxima de vehiculos en el taller: ";cin>>maximo;
     cout<<endl;
 
-    Taller *t = new Taller(maximo);
-    Vehiculo *Arreglo[maximo];
+    Taller *taller = new Taller(maximo);
     do{
 
         cout<<"1.Meter vehiculo al taller."<<endl;
@@ -26,13 +22,14 @@ int main()
         cout<<endl;
         switch(opcion){
         case 1:
-               t->meter(Arreglo);
+               taller->meter();
         break;
         case 2:
-
+               taller->arreglarVehiculos();
         break;
         case 0:
                 cout<<"El programa a finalizado correctamente..."<<endl;
+                taller->~Taller();
         break;
         default:
                 cout<<"Error del programa..."<<endl;

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1606755766 source:d:\cr.analisis de sistemas\-algoritmos y estructuras de datos 1-prof.oemig\simulacion final\simulacion(2)\main.cpp
+	<iostream>
+	<string.h>
+	"header1.h"
+
+1606755724 d:\cr.analisis de sistemas\-algoritmos y estructuras de datos 1-prof.oemig\simulacion final\simulacion(2)\header1.h
+	<iostream>
+	<string.h>
+
+1606755902 source:d:\cr.analisis de sistemas\-algoritmos y estructuras de datos 1-prof.oemig\simulacion final\simulacion(2)\header.cpp
+	"header1.h"
+
